@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset='utf-8'>
+    <title>Watch2Gether</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" media="screen" href="/assets/client_new-792806c04cb986ac1f7211a7dd5ee4a88a1bc4f7fd7680623010db7faf353d4a.css" />
+    <meta content="width=device-width, user-scalable=no" name="viewport">
+    <meta property="og:title" content="Let's meet on Watch2Gether">
+    <meta property="og:description" content="Watch2Gether lets you watch videos with your friends, synchronized at the same time.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.watch2gether.com/static/watch2gether-share.jpg">
+    <meta property="fb:app_id" content="309471965849425"/>
+    <meta name="description" content="Watch2Gether lets you watch videos with your friends, synchronized at the same time."/>
+    <meta name="keywords" content="synchronized, youtube, videos, watch, friends, social, watch2gether, funny, music, vidme, dailymotion, soundcloud, mixcloud"/>
+    <meta name="theme-color" content="#353531" />
+    <link rel="shortcut icon" href="/static/w2g.ico" type="image/ico"/>
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/cimpffimgeipdhnhjohpbehjkcdpjolg">
+    <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+    <script>
+        (function(){
+          var num = Math.floor(Math.random() * 50) + 1;
+          if(num === 42){
+              window.TrackJS && TrackJS.install({
+                  token: "a81361a8fc62406fadd338f4b0b95041"
+              });
+          }
+        }());
+    </script>
+    <!-- Quantcast Choice. Consent Manager Tag -->
+<script type="text/javascript">
+    var elem = document.createElement('script');
+    elem.src = 'https://quantcast.mgr.consensu.org/cmp.js';
+    elem.async = true;
+    elem.type = "text/javascript";
+    var scpt = document.getElementsByTagName('script')[0];
+    scpt.parentNode.insertBefore(elem, scpt);
+    (function() {
+        var gdprAppliesGlobally = false;
+        function addFrame() {
+            if (!window.frames['__cmpLocator']) {
+                if (document.body) {
+                    var body = document.body,
+                        iframe = document.createElement('iframe');
+                    iframe.style = 'display:none';
+                    iframe.name = '__cmpLocator';
+                    body.appendChild(iframe);
+                } else {
+                    // In the case where this stub is located in the head,
+                    // this allows us to inject the iframe more quickly than
+                    // relying on DOMContentLoaded or other events.
+                    setTimeout(addFrame, 5);
+                }
+            }
+        }
+        addFrame();
+        function cmpMsgHandler(event) {
+            var msgIsString = typeof event.data === "string";
+            var json;
+            if(msgIsString) {
+                json = event.data.indexOf("__cmpCall") != -1 ? JSON.parse(event.data) : {};
+            } else {
+                json = event.data;
+            }
+            if (json.__cmpCall) {
+                var i = json.__cmpCall;
+                window.__cmp(i.command, i.parameter, function(retValue, success) {
+                    var returnMsg = {"__cmpReturn": {
+                            "returnValue": retValue,
+                            "success": success,
+                            "callId": i.callId
+                        }};
+                    event.source.postMessage(msgIsString ?
+                        JSON.stringify(returnMsg) : returnMsg, '*');
+                });
+            }
+        }
+        window.__cmp = function (c) {
+            var b = arguments;
+            if (!b.length) {
+                return __cmp.a;
+            }
+            else if (b[0] === 'ping') {
+                b[2]({"gdprAppliesGlobally": gdprAppliesGlobally,
+                    "cmpLoaded": false}, true);
+            } else if (c == '__cmp')
+                return false;
+            else {
+                if (typeof __cmp.a === 'undefined') {
+                    __cmp.a = [];
+                }
+                __cmp.a.push([].slice.apply(b));
+            }
+        }
+        window.__cmp.gdprAppliesGlobally = gdprAppliesGlobally;
+        window.__cmp.msgHandler = cmpMsgHandler;
+        if (window.addEventListener) {
+            window.addEventListener('message', cmpMsgHandler, false);
+        }
+        else {
+            window.attachEvent('onmessage', cmpMsgHandler);
+        }
+    })();
+    window.__cmp('init', {
+        'Language': 'en',
+        'Initial Screen Body Text Option': 1,
+        'Publisher Purpose IDs': [1,2,5],
+        'Publisher Purpose Legitimate Interest IDs': [1,2,5],
+        'Publisher Name': 'Watch2Gether',
+        'Display Persistent Consent Link': false,
+        'Publisher Logo': 'https://www.watch2gether.com/static/w2g-oglogo.png',
+        'No Option': false,
+    });
+</script>
+<!-- End Quantcast Choice. Consent Manager Tag -->
+<style>
+  .qc-cmp-button {
+    background-color: #facd3b !important;
+    border-color: #facd3b !important;
+  }
+  .qc-cmp-button:hover {
+    background-color: transparent !important;
+    border-color: #facd3b !important;
+  }
+  .qc-cmp-alt-action,
+  .qc-cmp-link {
+    color: #facd3b !important;
+  }
+  .qc-cmp-button.qc-cmp-secondary-button:hover
+  {
+    border-color: transparent !important;
+    background-color: #facd3b !important;
+  }
+  .qc-cmp-button {
+    color: #000 !important;
+  }
+  .qc-cmp-button.qc-cmp-secondary-button {
+    border-color: #eee !important;
+    background-color: #eee !important;
+  }
+  .qc-cmp-ui a,
+  .qc-cmp-ui .qc-cmp-alt-action,
+  .qc-cmp-toggle-status  {
+    color: #444 !important;
+  }
+</style>
+    <script async src="//www.googletagservices.com/tag/js/gpt.js"></script>
+  </head>
+  <body data-w2g="['colors.image', ['style', 'backgroundImage']]" class="w2g-bind-colors">
+    <div id="site-dimmer" class="ui dimmer modals page transition hidden" style="display: flex !important;">
+      <div id="intro-modal" class="ui tiny modal transition hidden">
+        <div class="header">
+          Welcome to Watch2Gether!
+        </div>
+        <div class="content">
+          <div class="ui fluid green cancel button">Join the Room</div>
+        </div>
+      </div>
+      <div id="site-settings-modal" class="ui tiny modal transition hidden">
+        <div class="header">
+          Settings
+          <a href="https://community.watch2gether.com/" target="_blank"><i class="question circle icon"></i></a>
+        </div>
+        <div class="content">
+          <div style="text-align: center;">
+            <a href="#" class="browser-extension-install">More functions with our browser extension!</a>
+          </div>
+          <div class="ui fluid vertical menu">
+            <div id="sidebar-room-form">
+              <div class="w2g-change-language item">
+                <div tabindex="0" class="ui mini inline labeled icon dropdown button lang-select" title="Change language">
+	<i class="world icon"></i>
+	<div class="default text">
+		Change language
+	</div>
+	<div class="menu">
+		<div class="item" data-value="ar" data-text="AR">
+			العربية - <i>by Nasser Hajlawi</i>
+		</div>
+	    <div class="item" data-value="bg" data-text="BG">
+			Български - <i>by Zlatimir Petrov</i>
+		</div>
+		<div class="item" data-value="cs" data-text="CZ">
+			Čeština - <i>by Filip Jurik</i>
+		</div>
+		<div class="item" data-value="da" data-text="DA">
+			Dansk - <i>by Frederik Jensen</i>
+		</div>
+		<div class="item" data-value="de" data-text="DE">
+			Deutsch
+		</div>
+		<div class="item" data-value="el" data-text="EL">
+			Ελληνικά - <i>by John Karamanlidis</i>
+		</div>
+		<div class="item" data-value="en" data-text="EN">
+			English
+		</div>
+		<div class="item" data-value="es" data-text="ES">
+			Español - <i>by Raúl Lorente Borrego</i>
+		</div>
+    <div class="item" data-value="eu" data-text="EU">
+      Euskara - <i>by Unai</i>
+    </div>
+		<div class="item" data-value="fr" data-text="FR">
+			Français - <i>by Hugo Monfouga-Rauzet</i>
+		</div>
+		<div class="item" data-value="he" data-text="HE">
+			‏עברית - <i>by Daniel D.</i>
+		</div>
+    <div class="item" data-value="hr" data-text="HR">
+      Hrvatski - <i>by Arnea (Acres) Ahmetspahic</i>
+    </div>
+		<div class="item" data-value="it" data-text="IT">
+			Italiano - <i>by Alessandro Perilli</i>
+		</div>
+		<div class="item" data-value="hu" data-text="HU">
+			Magyar - <i>by David Tamas</i>
+		</div>
+		<div class="item" data-value="nl" data-text="NL">
+			Nederlands - <i>by Huib van Schaaik</i>
+		</div>
+		<div class="item" data-value="no" data-text="NO">
+			Norsk - <i>by Stian André Sørensen</i>
+		</div>		
+		<div class="item" data-value="fa" data-text="FA">
+			فارسی - <i>by Mohammad Kordzanganeh</i>
+		</div>
+		<div class="item" data-value="pl" data-text="PL">
+			Polski - <i>by Adrianna Żarkowska-Kopeć</i>
+		</div>
+		<div class="item" data-value="pt" data-text="PT">
+			Português - <i>by Miguel Nixo</i>
+		</div>
+		<div class="item" data-value="ru" data-text="RU">
+			Русский - <i>by QuadICE</i>
+		</div>
+		<div class="item" data-value="ro" data-text="RO">
+			Română - <i>by Dinu Cristian</i>
+		</div>
+    <div class="item" data-value="gsw" data-text="GSW">
+      Schwizerdütsch - <i>by Jan Zeta</i>
+    </div>
+		<div class="item" data-value="fi" data-text="FI">
+			Suomi - <i>by Mikael Hakanen</i>
+		</div>
+		<div class="item" data-value="sv" data-text="SE">
+			Svenska - <i>by Johnny Killander</i>
+		</div>
+		<div class="item" data-value="vi" data-text="VI">
+			Tiếng Việt- <i>by Bành Quang Long</i>
+		</div>
+		<div class="item" data-value="tr" data-text="TR">
+			Türkçe - <i>by Yusuf Kılıç</i>
+		</div>
+		<div class="item" data-value="ur" data-text="UR">
+			اردو - <i>by Abbas Shah</i>
+		</div>
+	</div>
+</div>
+
+              </div>
+              <div class="item w2g-feature owner-confirmed-notpersistent">
+                <form id="w2g-save-room-form" method="post" class="ui left aligned fluid form">
+                  <h4 class="ui header">Save room</h4>
+                  <div class="field">
+                    <div class="ui fluid action input">
+                      <input id="w2g-save-room-input" placeholder="Pick a room name" required="required" maxlength="30" type="text" name="persistent_name">
+                      <input type="hidden" name="_method" value="put"/>
+                      <button class="ui submit button">
+                        Save
+                      </button>
+                    </div>
+                  </div>
+                  <div class="w2g-center field">
+                    <i>Temporary rooms will be deleted after 24 hours.</i>
+                  </div>
+                </form>
+              </div>
+              <div class="w2g-center item w2g-feature owner-notconfirmed-notpersistent">
+                <i>Temporary rooms will be deleted after 24 hours.
+                  <br>
+                  <br>
+                  <a href="/auth/sign_up" target="_blank">Sign up for a Watch2Gether account to create permanent rooms!</a></i>
+              </div>
+              <div class="item w2g-feature owner-persistent">
+                <h4 class="ui header">Save room</h4>
+                <i class="green checkmark icon"></i>This room has been saved.
+              </div>
+              <div class="item">
+                <div class="ui left aligned fluid form">
+                  <h4 class="ui header">Colors</h4>
+                  <div class="field mod-col">
+                    <label>Background color</label>
+                    <div class="ui fluid action input">
+                      <input data-w2g="['setColor', ['event', 'change']]" id="bg-color-picker" type="text">
+                      <div data-w2g="['colorReset', ['event', 'click']]" class="ui icon button">
+                        <i class="remove icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="field mod-col">
+                    <label>Background opacity</label>
+                    <input data-w2g="['setOpacity', ['event', 'change']], ['settings.bg_opacity', ['property', 'value']]" type="range" class="slider" min="0" max="100">
+                  </div>
+                  <div class="field mod-col">
+                    <label>Background image</label>
+                    <div class="ui fluid action input">
+                      <input data-w2g="['colors.imageName', 'value'], ['openFileDialog', ['event', 'click']]" id="bg-image-filename" type="text">
+                      <div data-w2g="['openFileDialog', ['event', 'click']], ['colors.imageLoading', ['css', ['loading', null]]]" id="bg-image-select-button" class="ui grey icon button">
+                        <i class="folder open icon"></i>
+                      </div>
+                      <div data-w2g="['imageReset', ['event', 'click']]" class="ui icon button">
+                        <i class="remove icon"></i>
+                      </div>
+                    </div>
+                    <input id="bg-image-picker" type="file" accept="image/*" style="display: none;">
+                    <br>
+                    <div class="w2g-themes">
+                      <img data-w2g="['setTheme', ['event', 'click', 0]]" class="w2g-theme" src="/static/bgimages/preview_bg_1.jpg" alt="Theme 1">
+                      <img data-w2g="['setTheme', ['event', 'click', 1]]" class="w2g-theme" src="/static/bgimages/preview_bg_2.jpg" alt="Theme 2">
+                      <img data-w2g="['setTheme', ['event', 'click', 2]]" class="w2g-theme" src="/static/bgimages/preview_bg_3.jpg" alt="Theme 3">
+                      <img data-w2g="['setTheme', ['event', 'click', 3]]" class="w2g-theme" src="/static/bgimages/preview_bg_4.jpg" alt="Theme 4">
+                      <img data-w2g="['setTheme', ['event', 'click', 4]]" class="w2g-theme" src="/static/bgimages/preview_bg_5.jpg" alt="Theme 5">
+                      <img data-w2g="['setTheme', ['event', 'click', 5]]" class="w2g-theme" src="/static/bgimages/preview_bg_6.jpg" alt="Theme 6">
+                      <img data-w2g="['setTheme', ['event', 'click', 6]]" class="w2g-theme" src="/static/bgimages/preview_bg_7.jpg" alt="Theme 7">
+                      <img data-w2g="['setTheme', ['event', 'click', 7]]" class="w2g-theme" src="/static/bgimages/preview_bg_8.jpg" alt="Theme 8">
+                    </div>
+                  </div>
+                  <div class="plus-click field">
+                    <label>Your chat color<i class="blue add circle icon"></i></label>
+                    <div class="plus-feature ui fluid action input w2g-users">
+                      <input data-w2g="['setChatColor', ['event', 'change']]" id="chat-bg-color-picker" type="text">
+                      <div data-w2g="['resetChatColor', ['event', 'click']]" class="ui icon button">
+                        <i class="remove icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="ui left aligned fluid form">
+                  <h4 class="ui header">Notifications</h4>
+                  <div class="disabled attached field push-enabler">
+                    <div class="ui toggle checkbox">
+                      <input type="checkbox" tabindex="0" class="hidden">
+                      <label>Enable notifications on this device.</label>
+                    </div>
+                  </div>
+                  <div class="inline field push-for-room w2g-users">
+                    <input data-w2g="['sendNotification', 'check']" type="checkbox" title="Send notifications">
+                    <label title="Send notifications">Send notifications</label>
+                  </div>
+                </div>
+              </div>
+              <div class="item mod-only">
+                <div class="ui form w2g-bind-moderation">
+                  <h4 class="ui header">Enable moderation</h4>
+                  <div class="inline field">
+                    <input data-w2g="['members_only', 'check']" type="checkbox">
+                    <label>Members only</label>
+                  </div>
+                  <div class="inline field">
+                    <input data-w2g="['moderated', 'check']" type="checkbox">
+                    <label>Player</label>
+                  </div>
+                  <div class="inline field">
+                    <input data-w2g="['moderated_playlist', 'check']" type="checkbox">
+                    <label>Playlists</label>
+                  </div>
+                  <div class="inline field">
+                    <input data-w2g="['moderated_background', 'check']" type="checkbox">
+                    <label>Colors</label>
+                  </div>
+                  <div class="inline field plus-click">
+                    <input data-w2g="['moderated_suggestions', 'check']" type="checkbox">
+                    <label>Turn off suggested videos <i class="blue add circle icon"></i></label>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="ui form">
+                  <h4 class="ui header">Settings</h4>
+                  <div class="inline field">
+                    <input id="chat-input-notificationbox" type="checkbox" checked title="Enable or disable the notification sound when you receive a new message.">
+                    <label title="Enable or disable the notification sound when you receive a new message.">Notification sound</label>
+                  </div>
+                  <div class="inline field">
+                    <input id="chat-input-statusbox" type="checkbox" checked title="Show status messages">
+                    <label title="Show status messages">Show status messages</label>
+                  </div>
+                </div>
+              </div>
+              <div class="item mod-only">
+                <h4 class="ui header">Users</h4>
+                <div data-w2g="['users', 'each']" class="w2g-users">
+                  <div data-w2g="['idattr', 'class']" class="w2g-sidebar-useritem">
+                    <img data-w2g="['avatar', ['attr', 'src']]" class="ui avatar image" src="/assets/dummy-aa5e8e83b6490c8cc064d6342a8a2a441a0ca8be6bb08ca1884987bc0eefa5d0.png" alt="User Avatar">
+                    <span class="w2g-useritem-nickname">
+                                  <i data-w2g="['banned', ['if', 1]]" class="red ban icon"></i>
+                                  <span data-w2g="['nname', 'text'], ['banned', ['css', ['w2g-disabled', null]]]"></span>
+                                </span>
+                    <span data-w2g="['self', 'ifnot']">
+                      <i data-w2g="['banned', ['if', 0]], ['$parent.banUser', ['event', 'click']]" class="toggle on icon"></i>
+                      <i data-w2g="['banned', ['if', 1]], ['$parent.unbanUser', ['event', 'click']]" class="toggle off icon"></i>
+                      <i data-w2g="['banned', ['if', 2]], ['$parent.approveUser', ['event', 'click']]" class="green thumbs up icon"></i>
+                      <i data-w2g="['banned', ['if', 2]], ['$parent.banUser', ['event', 'click']]" class="red thumbs down icon"></i>
+                      <span data-w2g="['banned', ['if', 0]]">
+                        <i data-w2g="['online', 'ifnot'], ['$parent.removeUser', ['event', 'click']]" class="remove icon"></i>
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="w2g-legal">
+            <a class="item" href="https://community.watch2gether.com/t/impressum-imprint/594" target="_blank">Contact - Site notice / Impressum</a>
+            / <a href="#" class="item change-consent" onclick="window.__cmp('displayConsentUi'); return false;">Privacy Settings</a>
+          </div>
+          <div class="ui cancel button">
+            Close
+          </div>
+        </div>
+      </div>
+      <div id="playlist-modal" class="ui tiny modal transition hidden w2g-playlists">
+        <div class="header">
+          Manage playlists
+        </div>
+        <div class="content">
+          <form data-w2g="['createPlaylist', ['event', 'submit']]" class="ui form">
+            <div class="ui fluid action input">
+              <input type="text" placeholder="Enter a name for your new playlist" required maxlength="40">
+              <button type="submit" class="ui button">
+                New playlist
+              </button>
+            </div>
+          </form>
+          <br>
+          <div class="w2g-list-items" data-w2g="['playlists.lists', 'each']">
+            <div class="w2g-list-item darker-item">
+              <div class="w2g-list-item-title w2g-nolink" data-w2g="['title', 'text']"></div>
+              <div class="w2g-list-item-actions">
+                <i  data-w2g="['$parent.deletePlaylist', ['event', 'click']]" class="ui remove icon" title="Delete"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="ui cancel button">
+            Close
+          </div>
+        </div>
+      </div>
+      <div id="invite-modal" class="ui small modal transition hidden">
+        <div class="header">
+          Invite friends to watch with you!
+          <a target="_blank" href="https://community.watch2gether.com/t/how-to-use-watch2gether/736#invite"><i class="help circle icon"></i></a>
+        </div>
+        <div class="image content">
+          <div class="image">
+            <i class="ui add user icon"></i>
+          </div>
+          <div class="description">
+            <div class="ui header">
+              Copy and share this link:
+            </div>
+            <div class="ui fluid action input">
+              <input id="main-invite-url" class="invite-url" type="text" placeholder="Invite URL" readonly>
+              <button class="invite-button ui button w2g-yellow-bg" data-clipboard-target="#main-invite-url">
+                Copy
+              </button>
+            </div>
+            <br>
+            <div data-w2g="['icons', 'each']" class="w2g-invite-icons">
+              <i data-w2g="['css', ['attr', 'class']], ['$parent.openInvite', ['event', 'click']], ['name', ['attr', 'title']]"></i>
+            </div>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="ui cancel button">
+            Close
+          </div>
+        </div>
+      </div>
+      <div id="members-only-modal" class="ui mini modal transition hidden">
+        <div class="header"><i class="lock icon"></i>Members only</div>
+        <div class="content w2g-loading"></div>
+      </div>
+      
+      <div id="user-modal" class="ui small modal transition hidden w2g-users">
+        <div class="header">
+          Pick a nickname
+        </div>
+        <div class="image content">
+          <div class="ui small image">
+            <img data-w2g="['myavatar', ['attr', 'src']]" src="/assets/dummy-aa5e8e83b6490c8cc064d6342a8a2a441a0ca8be6bb08ca1884987bc0eefa5d0.png" alt="Avatar Image">
+          </div>
+          <div class="description">
+            <form data-w2g="['changeNick', ['event', 'submit']]" id="nickname-form" class="ui form">
+              <div class="field">
+                <div class="ui action input">
+                  <input data-w2g="['myname', 'value']" id="nickname-form-nickname" type="text" placeholder="Enter a nickname..." required maxlength="20">
+                  <button class="ui primary submit button">
+                    OK
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="ui cancel button">
+            Close
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-w2g="['colors.shade2', ['style', 'backgroundColor']], ['searchOpen', ['css', ['w2g-search-open', null]]]" class="w2g-main-container w2g-bind-layout">
+      <div class="w2g-topbar-wrapper w2g-bind-apps">
+        <div id="browser-message" class="w2g-top-message w2g-top-message-alert">
+          <i class="exclamation triangle icon"></i><span class="title"> Your browser is too old for Watch2Gether. Please make sure that you are using the <a href='https://updatemybrowser.org/browser' target='_blank'>latest version</a> of your browser. </span>
+        </div>
+        <div id="unconfirmed-message" class="w2g-top-message w2g-top-message-alert">
+          <i class="exclamation triangle icon"></i>You have to confirm your email address before continuing.
+        </div>
+        <div id="yt_a_message" class="w2g-top-message-small">
+          <i class="red window close icon" style="cursor: pointer;"></i> If you are experiencing issues loading Youtube videos, please try to disable your adblocker.
+        </div>
+        <div class="w2g-topbar">
+          <div class="w2g-topbar-menu w2g-topbar-left w2g-search-hide">
+            <div class="w2g-topbar-logo w2g-logout"></div>
+          </div>
+          <div class="w2g-topbar-content">
+            <div class="w2g-topbar-search w2g-until-mobile w2g-search-show">
+              <form data-w2g="['searchSubmitTopbar', ['event', 'submit']]" class="ui fluid form" id="search-bar-form" action="#" method="post">
+                <div class="ui fluid icon action input w2g-intro-search" data-step="4" data-intro="Search for new content here. Available sources are Youtube, Soundcloud, Vimeo and many more.">
+                  <div data-w2g="['toggleApps', ['event', 'click']], ['activeName', ['attr', 'title']]" class="w2g-active-icon">
+                    <img src="/assets/dummy-aa5e8e83b6490c8cc064d6342a8a2a441a0ca8be6bb08ca1884987bc0eefa5d0.png" data-w2g="['activeLogo', ['attr', 'src']]" alt="Active Provider">
+                    <div>
+                      <i data-w2g="['showApps', 'ifnot']" class="angle down icon"></i>
+                      <i data-w2g="['showApps', 'if']" style="display: none;" class="angle up icon"></i>
+                    </div>
+                  </div>
+                  <input data-w2g="['searchTerm', 'value'], ['inputPaste', ['event', 'paste', null, false]], ['activeDescription', ['attr', 'placeholder']], ['activeDescription', ['attr', 'title']]" id="search-bar-input" name="search-bar-input" type="text" title="Search for videos and audio on YouTube, Vimeo and SoundCloud or paste a direct link to a video or audio track." placeholder="Search OR paste link to YouTube / Amazon / Dailymotion / Vimeo / SoundCloud / Twitch" autocomplete="off">
+                  <i data-w2g="['clearSearch', ['event', 'click']]" class="remove icon"></i>
+                  <button data-w2g="['searching', ['css', ['loading', null]]]" type="submit" class="ui icon button">
+                    <i class="search icon"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="w2g-topbar-roominfo w2g-bind-moderation nobreak w2g-search-hide">
+              <i data-w2g="['members_only', 'if']" class="lock icon" title="Members only"></i><span data-w2g="['room_name', 'text']">Room Name</span>
+            </div>
+            <div class="w2g-topbar-menu">
+              <i data-w2g="['searchOpen', 'toggle']" class="search icon w2g-from-mobile w2g-search-hide"></i>
+              <i data-w2g="['searchOpen', 'toggle']" class="close icon w2g-from-mobile w2g-search-show"></i>
+              <div class="invite-cta w2g-search-hide" title="Invite friends to watch with you!"><i class="user plus icon"></i> Invite friends</div>
+              <a class="w2g-search-hide" href="https://community.watch2gether.com/" target="_blank"><i class="question circle icon"></i></a>
+              <i data-w2g="['showSettings', ['event', 'click']]" class="setting icon w2g-search-hide"></i>
+            </div>
+          </div>
+        </div>
+        <div data-w2g="['showApps', 'if'], ['installedApps', 'each']" class="w2g-app-icons" style="display: none;">
+          <div class="w2g-app-icon w2g-selectable" data-w2g="['$parent.click', ['event', 'mousedown']], ['$parent.dblclick', ['event', 'dblclick']], ['active', ['css', ['w2g-selectable-active', null]]]">
+            <img src="/assets/dummy-aa5e8e83b6490c8cc064d6342a8a2a441a0ca8be6bb08ca1884987bc0eefa5d0.png" class="w2g-app-icon-image" data-w2g="['icon_path', ['attr', 'src']]" alt="Watch2Gether app">
+            <div class="w2g-app-icon-text" data-w2g="['provider_name', 'text']"></div>
+          </div>
+        </div>
+        <div data-w2g="['showApps', 'if'], ['activeDescription', 'text']" class="w2g-app-active" style="display: none;"></div>
+      </div>
+      <div class="w2g-main-lower">
+        <div class="w2g-player-search">
+          <div class="w2g-scroll-vertical">
+            <div data-w2g="['colors.shade1', ['style', 'backgroundColor']]" class="w2g-color-wrapper">
+              <div class="w2g-player-container">
+                <div data-w2g="['smallPlayer', ['css', ['w2g-small-player', null]]]"  class="w2g-video-container w2g-search-hide" data-step="2" data-intro="The player shows the same content in-sync for all members. For example: When you stop a video, it stops for everyone else in the room.">
+                  <div class="w2g-player-video">
+                    <div id="w2g-video"></div>
+                  </div>
+                </div>
+                <div class="w2g-player-menu w2g-player w2g-search-hide">
+                  <div data-w2g="['sliderClick', ['event', 'click']], ['video.isLive', ['css', ['w2g-disabled', null]]]" id="time-slider" class="w2g-timeslider mod-player">
+                    <div data-w2g="['video.position', ['style', 'width']]" class="w2g-timeslider-fill">
+                      <div data-w2g="['sliderDown', ['event', 'mousedown']], ['sliderDown', ['event', 'touchstart']]" class="w2g-timeslider-knob" tabindex="-1">
+                        <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                          <circle cx="7" cy="7" r="7" fill="#facd3b"></circle>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui inverted tiny menu">
+                    <a data-w2g="['togglePlay', ['event', 'click']], ['video.isLive', ['css', ['w2g-disabled', null]]]" class="w2g-play-button icon item mod-player"><i data-w2g="['video.stateCSS', 'toggleClass']" class="ui play icon"></i></a>
+                    <div id="player-time" class="item">
+                      <span data-w2g="['video.timeString', 'text']"></span> /
+                      <span data-w2g="['video.duration', 'text']"></span>
+                    </div>
+                    <div id="player-settings-section" class="right icon menu">
+                      <div data-w2g="['actions', 'each']" class="w2g-actions item">
+                        <div class="w2g-player-action animated bounceIn fast">
+                          <div class="w2g-action-icon"><i data-w2g="['css', ['attr', 'class']]"></i></div>
+                          <div data-w2g="['desc', 'if'], ['desc', 'text']" class="w2g-action-desc"></div>
+                          <div data-w2g="['user.nname', 'text']" class="w2g-action-username"></div>
+                        </div>
+                      </div>
+                      <div data-w2g="['video.subtitles.length', 'if']" class="icon item" tabindex="-1">
+                        <i class="comment icon"></i>
+                        <div data-w2g="['video.subtitles', 'each']" class="w2g-dropdown w2g-dropdown-limited">
+                          <div data-w2g="['displayName', 'text'], ['$parent.setSubtitle', ['event', 'click']], ['active', ['css', ['active', null]]]" class="dd-item"></div>
+                        </div>
+                        <div class="w2g-spacer" tabindex="-1"></div>
+                      </div>
+                      <div class="icon item" tabindex="-1">
+                        <i class="setting icon"></i>
+                        <div class="w2g-dropdown">
+                          <div data-w2g="['toggleLoop', ['event', 'click']], ['video.loop', ['css', ['active','deactive']]]" class="dd-item mod-player" tabindex="-1" title="Repeat video">
+                            <i class="sync icon"></i>
+                          </div>
+                          <div data-w2g="['setFullScreen', ['event', 'click']]" class="dd-item" title="Switch to fullscreen">
+                            <i class="expand icon"></i>
+                          </div>
+                          <div data-w2g="['video.pspeeds.length', 'if']" class="dd-item mod-player" tabindex="-1" title="Playback speed">
+                            &lt; <i class="clock outline icon"></i>
+                            <div class="dd-sub" data-w2g="['video.pspeeds', 'each']">
+                              <div data-w2g="['name', 'text'], ['$parent.setPspeed', ['event', 'click']], ['active', ['css', ['active', null]]]" class="dd-item dd-selectable"></div>
+                            </div>
+                          </div>
+                          <div data-w2g="['video.resolutions.length', 'if']" class="dd-item" tabindex="-1" title="Video quality">
+                            &lt; <i class="film icon"></i>
+                            <div class="dd-sub" data-w2g="['video.resolutions', 'each']">
+                              <div data-w2g="['name', 'text'], ['$parent.setQuality', ['event', 'click']], ['active', ['css', ['active', null]]]" class="dd-item dd-selectable"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="w2g-spacer" tabindex="-1"></div>
+                      </div>
+                      <div data-w2g="['video.canSetVolume', ['css', [null, 'w2g-disabled']]]" class="icon item" tabindex="-1">
+                        <i class="volume up icon"></i>
+                        <div class="w2g-dropdown">
+                          <div class="dd-item player-volume">
+                            <div class="w2g-vertical-slider">
+                              <input data-w2g="['setVolume', ['event', 'input']]" class="slider" type="range" min="0" max="100" value="60" autocomplete="off">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="w2g-spacer" tabindex="-1"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w2g-center-ad">
+                <div id='w2g-doit-1'></div>
+              </div>
+              <div class="w2g-center-plus w2g-until-mobile">
+                <a href="/pages/plus" target="_blank">You don&#39;t like advertising? Try Watch2Gether PLUS!</a>
+              </div>
+              <div data-w2g="['colors.text', ['style', 'color']]" class="w2g-search-results w2g-bind-apps w2g-search-show-flex">
+                <div data-w2g="['canImport', 'if']" class="w2g-pl-import-button">
+                  <div data-w2g="['addAllToPl', ['event', 'click']], ['importRunning', ['css', ['loading', null]]], ['importDone', ['css', ['disabled', null]]]" class="ui right floated button" title="Import playlist">Import playlist</div>
+                </div>
+                <div class="w2g-items-grid w2g-items-full" id="w2g-video-recommendations">
+  <div class="w2g-item darker-item" data-url="https://w2gshorts.com/view.html?id=cd9432nf823" data-title="Spring" data-thumb="https://w2gshorts.com/data/cd9432nf823/thumb_1.jpg">
+    <div class="w2g-item-image mod-player" title="Play">
+      <img src="https://w2gshorts.com/data/cd9432nf823/thumb_1.jpg" alt="Preview Image">
+    </div>
+    <div class="w2g-item-content">
+      <div class="w2g-item-title mod-player" title="Play">Spring</div>
+      <div class="w2g-item-desc">Spring is the story of a shepherd girl and her dog, who face ancient spirits in order to continue the cycle of life. This poetic and visually stunning short film was written and directed by Andy Goralczyk, inspired by his childhood in the mountains of Germany.</div>
+      <div class="w2g-item-actions">
+        <i data-action="suggest" class="star icon" title="Suggest"></i>
+        <i data-action="addpl" class="add square icon mod-pl" title="Add to playlist"></i>
+        <div class="w2g-item-publisher w2g-click"><a href="https://cloud.blender.org/" target="_blank">Blender Animation Studio</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="w2g-item darker-item" data-url="https://w2gshorts.com/view.html?id=wrtzh4z3t4" data-title="Caminandes 1: Llama Drama" data-thumb="https://w2gshorts.com/data/wrtzh4z3t4/thumb_1.jpg">
+    <div class="w2g-item-image mod-player" title="Play">
+      <img src="https://w2gshorts.com/data/wrtzh4z3t4/thumb_1.jpg" alt="Preview Image">
+    </div>
+    <div class="w2g-item-content">
+      <div class="w2g-item-title mod-player" title="Play">Caminandes 1: Llama Drama</div>
+      <div class="w2g-item-desc">In this episode of the Caminandes cartoon series we get to know our hero Koro even better! It&#39;s winter in Patagonia, food is getting scarce. Koro the Llama engages with Oti the pesky penguin in an epic fight over that last tasty berry.</div>
+      <div class="w2g-item-actions">
+        <i data-action="suggest" class="star icon" title="Suggest"></i>
+        <i data-action="addpl" class="add square icon mod-pl" title="Add to playlist"></i>
+        <div class="w2g-item-publisher w2g-click"><a href="https://cloud.blender.org/" target="_blank">Blender Animation Studio</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="w2g-item darker-item" data-url="https://w2gshorts.com/view.html?id=ed93jf73hdr" data-title="Caminandes 2: Gran Dillama" data-thumb="https://w2gshorts.com/data/ed93jf73hdr/thumb_1.jpg">
+    <div class="w2g-item-image mod-player" title="Play">
+      <img src="https://w2gshorts.com/data/ed93jf73hdr/thumb_1.jpg" alt="Preview Image">
+    </div>
+    <div class="w2g-item-content">
+      <div class="w2g-item-title mod-player" title="Play">Caminandes 2: Gran Dillama</div>
+      <div class="w2g-item-desc">Watch the second installment of Caminandes: Gran Dillama, where Koro&#39;s separated from some tasty treats by a measly little fence. What could go wrong?</div>
+      <div class="w2g-item-actions">
+        <i data-action="suggest" class="star icon" title="Suggest"></i>
+        <i data-action="addpl" class="add square icon mod-pl" title="Add to playlist"></i>
+        <div class="w2g-item-publisher w2g-click"><a href="https://cloud.blender.org/" target="_blank">Blender Animation Studio</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="w2g-item darker-item" data-url="https://w2gshorts.com/view.html?id=nu313hecd2" data-title="Caminandes 3: Llamigos" data-thumb="https://w2gshorts.com/data/nu313hecd2/thumb_1.jpg">
+    <div class="w2g-item-image mod-player" title="Play">
+      <img src="https://w2gshorts.com/data/nu313hecd2/thumb_1.jpg" alt="Preview Image">
+    </div>
+    <div class="w2g-item-content">
+      <div class="w2g-item-title mod-player" title="Play">Caminandes 3: Llamigos</div>
+      <div class="w2g-item-desc">In this episode of the Caminandes cartoon series we get to know our hero Koro even better! It&#39;s winter in Patagonia, food is getting scarce. Koro the Llama engages with Oti the pesky penguin in an epic fight over that last tasty berry.</div>
+      <div class="w2g-item-actions">
+        <i data-action="suggest" class="star icon" title="Suggest"></i>
+        <i data-action="addpl" class="add square icon mod-pl" title="Add to playlist"></i>
+        <div class="w2g-item-publisher w2g-click"><a href="https://cloud.blender.org/" target="_blank">Blender Animation Studio</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="w2g-item darker-item" data-url="https://w2gshorts.com/view.html?id=jde92437t5i" data-title="Big Buck Bunny" data-thumb="https://w2gshorts.com/data/jde92437t5i/thumb_1.jpg">
+    <div class="w2g-item-image mod-player" title="Play">
+      <img src="https://w2gshorts.com/data/jde92437t5i/thumb_1.jpg" alt="Preview Image">
+    </div>
+    <div class="w2g-item-content">
+      <div class="w2g-item-title mod-player" title="Play">Big Buck Bunny</div>
+      <div class="w2g-item-desc">Tired of being picked on by Frankie the squirrel and his band of puny forest creatures, JC the bunny finally decides to fight back.</div>
+      <div class="w2g-item-actions">
+        <i data-action="suggest" class="star icon" title="Suggest"></i>
+        <i data-action="addpl" class="add square icon mod-pl" title="Add to playlist"></i>
+        <div class="w2g-item-publisher w2g-click"><a href="https://cloud.blender.org/" target="_blank">Blender Animation Studio</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+                <div class="w2g-items-grid" data-w2g="['searchResults', 'each']">
+                  <div data-w2g="['provider', 'if']" class="w2g-item darker-item">
+                    <div data-w2g="['$parent.play', ['event', 'click']]" class="w2g-item-image mod-player" title="Play">
+                      <img data-w2g="['thumb', ['attr', 'src']]" src="/assets/dummy-aa5e8e83b6490c8cc064d6342a8a2a441a0ca8be6bb08ca1884987bc0eefa5d0.png" alt="Preview Image">
+                    </div>
+                    <div class="w2g-item-content">
+                      <div data-w2g="['$parent.play', ['event', 'click']], ['title', 'text']" class="w2g-item-title mod-player" title="Play"></div>
+                      <div class="w2g-item-desc"></div>
+                      <div class="w2g-item-actions">
+                        <i data-w2g="['$parent.suggest', ['event', 'click']]" class="star icon" title="Suggest"></i>
+                        <i data-w2g="['$parent.addToPl', ['event', 'click']]" class="add square icon mod-pl" title="Add to playlist"></i>
+                        <div data-w2g="['publisher', 'text'], ['$parent.loadMoreFromPub', ['event', 'click']], ['publisherID', ['css', ['w2g-click', null]]]" class="w2g-item-publisher">Author</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="w2g-doit-end"></div>
+                <div data-w2g="['canLoadMore', 'if'], ['searching', ['css', ['w2g-loading', null]]], ['loadMore', ['event', 'click']]" class="ui button w2g-search-loading">
+                  <div data-w2g="['searching', 'ifnot']">Load more</div>
+                </div>
+                <div data-w2g="['canLoadMore', 'ifnot']" class="w2g-search-nomore darker-item">
+                  <div class="w2g-nomore-icon"><i class="exclamation circle icon"></i></div>
+                  <div>If you can&#39;t find the right video by searching, just copy a direct link into the search box!</div>
+                </div>
+                <div data-w2g="['itemsFound', 'ifnot']" style="text-align: center;">No items found...</div>
+                <div class="w2g-search-spacer"></div>
+              </div>
+            </div>
+          </div>
+          <div data-w2g="['colors.shade1na', ['style', 'backgroundColor']], ['userbarHidden', ['css', ['w2g-panel-hidden', null]]]" id="userbar" class="w2g-userbar w2g-users w2g-search-hide w2g-panel-bottom" data-step="1" data-intro="In a Watch2Gether room you can meet &amp; hang out with your friends. The room is private, only invited users can join. All members of this room show up here.">
+            <div data-w2g="['userbarHidden', 'toggle']" class="w2g-panel-menu">
+              <div data-w2g="['panelNotifications', 'if'], ['panelNotifications', 'text']" class="w2g-panel-notifications">0</div>
+              <div class="w2g-panel-icon-medium w2g-webrtc">
+                <i data-w2g="['myCamEnabled', ['css', ['green', null]]]" class="record icon"></i>
+                <i data-w2g="['myMicEnabled', ['css', ['green', null]]]" class="unmute icon"></i>
+                <i class="user icon"></i>
+              </div>
+            </div>
+            <div data-w2g="['users', 'each']" class="w2g-userbar-list w2g-scroll-horizontal">
+              <div class="w2g-user" data-w2g="['banned', ['ifnot', 1]], ['online', ['css', ['available animated bounceIn fast', 'unavailable']]], ['idattr', ['attr', 'id']], ['order', ['style', 'order']], ['windowed', ['css', ['windowed', null]]], ['self', ['css', ['self', null]]], ['hasaudio', ['css', ['hasaudio', null]]], ['hasvideo', ['css', ['hasvideo', null]]]">
+                <div class="w2g-user-menu" draggable="false" data-w2g="['windowed', ['attr', 'draggable']]">
+                  <i data-w2g="['windowed', 'ifnot'], ['windowed', 'toggle']" class="expand icon" title="Open user in a separate window"></i>
+                  <i data-w2g="['windowed', 'if'], ['windowed', 'toggle']" class="remove icon" title="Close"></i>
+                </div>
+                <div class="w2g-user-avatar">
+                  <img data-w2g="['avatar', ['attr', 'src']]" src="/assets/dummy-aa5e8e83b6490c8cc064d6342a8a2a441a0ca8be6bb08ca1884987bc0eefa5d0.png" alt="Avatar image" draggable="false">
+                  <div class="w2g-user-video">
+                    <video data-w2g="['hasvideo', 'if'], ['camVolume', 'volume']" autoplay playsinline></video>
+                    <i data-w2g="['hasaudio', 'if']" class="volume up icon"></i>
+                  </div>
+                  <div class="w2g-user-icons">
+                    <i data-w2g="['plus', 'if']" class="blue add circle icon"></i><i data-w2g="['owner', 'if']" class="chess queen icon"></i>
+                  </div>
+                  <div data-w2g="['banned',['if', 2]]" class="w2g-user-approve">
+                    <i data-w2g="['$parent.approveUser', ['event', 'click']]" class="green thumbs up icon"></i><br>
+                    <i data-w2g="['$parent.banUser', ['event', 'click']]" class="red thumbs down icon"></i>
+                  </div>
+                  <div class="w2g-cam-playicon mod-player" title="Play">
+                    <i data-w2g="['$parent.selectRTC', ['event', 'click']]" class="play circle icon"></i>
+                  </div>
+                </div>
+                <div class="w2g-cam-audiovolume">
+                  <i class="volume off icon"></i><input data-w2g="['self', 'ifnot'], ['camVolume', 'value']" type="range" min="0" max="1" step="0.01">
+                </div>
+                <div class="w2g-user-name" data-w2g="['nname', 'text'], ['nname', ['attr', 'title']], ['$parent.showUser', ['event', 'click']]"></div>
+              </div>
+            </div>
+            <div data-w2g="['colors.text', ['style', 'color']]" class="w2g-webrtc w2g-userctrl">
+              <div data-w2g="['userbarHidden', 'toggle']" class="w2g-hide-userbar">
+                <i class="chevron down icon"></i>
+              </div>
+              <div class="w2g-enablecam-button" title="Enable your webcam">
+                <i data-w2g="['myCamEnabled', 'toggle'], ['myCamEnabled', ['css', ['green', null]]]" class="record icon"></i>
+                <div data-w2g="['videoDevices.length', 'if']" tabindex="-1">
+                  <i class="arrow alternate circle up icon"></i>
+                  <div data-w2g="['videoDevices', 'each']" class="w2g-dropdown">
+                    <div data-w2g="['$parent.selectVideoDevice', ['event', 'click']],['label', 'text'], ['active', ['css', ['active', null]]]" class="dd-item"></div>
+                  </div>
+                  <div class="w2g-spacer" tabindex="-1"></div>
+                </div>
+              </div>
+              <div class="w2g-enablecam-button">
+                <i data-w2g="['myMicEnabled', 'toggle'], ['myMicEnabled', ['css', ['green', null]]]" class="unmute icon"></i>
+                <div data-w2g="['audioDevices.length', 'if']" tabindex="-1">
+                  <i class="arrow alternate circle up icon"></i>
+                  <div data-w2g="['audioDevices', 'each']" class="w2g-dropdown">
+                    <div data-w2g="['$parent.selectAudioDevice', ['event', 'click']], ['label', 'text'], ['active', ['css', ['active', null]]]" class="dd-item"></div>
+                  </div>
+                  <div class="w2g-spacer" tabindex="-1"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-w2g="['colors.shade1', ['style', 'backgroundColor']], ['colors.text', ['style', 'color']]" class="w2g-main-right w2g-search-hide">
+          <div class="w2g-square-ad">
+            <div id='w2g-doit-2'></div>
+            <div id="div-adb-square"></div>
+          </div>
+          <div class="w2g-content-right">
+            <div id="w2g-sidebar-menu" data-w2g="['chatDetached', ['css', ['w2g-chat-detached', null]]]" class="w2g-menu auto-menu w2g-messages">
+              <div class="w2g-chat-menu-item w2g-active">Chat</div>
+              <div class="w2g-playlists-menu-item">Playlists</div>
+              <div>History</div>
+            </div>
+            <div data-w2g="['colors.mainna', ['style', 'backgroundColor']], ['chatDetached', ['css', ['w2g-panel-bottom', null]]], ['chatHidden', ['css', ['w2g-panel-hidden', null]]]" class="w2g-menu-tab w2g-active w2g-chat w2g-messages">
+              <div data-w2g="['chatHidden', 'toggle']" class="w2g-panel-menu">
+                <div data-w2g="['panelNotifications', 'if'], ['panelNotifications', 'text']" class="w2g-panel-notifications">0</div>
+                <div class="w2g-panel-icon-large">
+                  <i class="comments icon"></i>
+                </div>
+              </div>
+              <div class="w2g-chat-menu">
+                <i data-w2g="['chatDetached', 'toggle']" class="window maximize outline icon"></i>
+                <i data-w2g="['chatDetached', 'toggle']" class="window restore outline icon"></i>
+                <i data-w2g="['chatHidden', 'toggle']" class="chevron down icon"></i>
+              </div>
+              <div data-w2g="['onScroll', ['event', 'scroll']], ['onMouseLeave', ['event', 'mouseleave']], ['messages', 'each']" class="w2g-chat-messages w2g-messages-container w2g-scroll-vertical" data-step="3" data-intro="The chat can be used to talk to other members.">
+                <div data-w2g="['type', 'class'], ['user.self', ['css', ['w2g-me', 'w2g-they']]], ['user.plus', ['css', ['w2g-plus-message', 'w2g-regular-message']]], ['followup', ['css', ['w2g-followup', null]]], ['$parent.toggleMax', ['event', 'click', null, false]], ['maximized', ['css', ['maximized', null]]]" class="w2g-chat-message">
+                  <div class="w2g-chat-avatar">
+                    <img data-w2g="['user.avatar', ['attr', 'src']]" class="ui avatar image" src="/assets/dummy-aa5e8e83b6490c8cc064d6342a8a2a441a0ca8be6bb08ca1884987bc0eefa5d0.png" alt="Avatar image">
+                    <div class="w2g-chat-message-user" data-w2g="['user.nname', 'text']"></div>
+                  </div>
+                  <div class="w2g-chat-bubble">
+                    <div data-w2g="['user.chatbgcolor', ['style', 'backgroundColor']], ['user.chatForeColor', ['style', 'color']]" class="w2g-chat-bubble-container">
+                      <div class="w2g-chat-bubble-content">
+                        <span class="w2g-chat-message-text" data-w2g="['msg', 'html']"></span>
+                        <span data-w2g="['title', 'if']" class="w2g-chat-item">
+                          <span data-w2g="['provider', 'class']" class="w2g-chat-provider"></span>
+                          <a class="w2g-chat-item-text w2g-url" href="#" target="_blank" data-w2g="['url', 'if'], ['title', 'text'], ['url', ['attr', 'href']]"></a>
+                          <span class="w2g-chat-item-text" data-w2g="['url', 'ifnot'], ['title', 'text']"></span>
+                        </span>
+                        <div data-w2g="['suggestions.length', 'if'], ['suggestions', 'each']">
+                          <div class="w2g-chat-item w2g-chat-suggestion darker-item">
+                            <span data-w2g="['provider', 'class']" class="w2g-chat-provider"></span>
+                            <a class="w2g-chat-item-text w2g-url" href="#" target="_blank" data-w2g="['title', 'text'], ['id', ['attr', 'href']]"></a>
+                            <div class="w2g-chat-item-actions">
+                              <i data-w2g="['$parent.play', ['event', 'click']]" class="play icon mod-player" title="Play"></i>
+                              <i data-w2g="['$parent.addToPl', ['event', 'click']]" class="add square icon mod-pl" title="Add to playlist"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-w2g="['time', 'text']" class="w2g-chat-message-time"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w2g-chat-input">
+                <div class="w2g-chat-input-sizer">
+                  <form data-w2g="['submitChatForm', ['event', 'submit']]" class="ui form" id="chat-input-form">
+                    <div class="ui fluid action contrast input">
+                      <input class="w2g-messages-input" name="chat-input-field" type="text" placeholder="Type your message here..." autocomplete="off">
+                      <button type="submit" style="display: none;"></button>
+                    </div>
+                  </form>
+                  <div data-w2g="['emojiinit', ['event', 'click', null, false]]" class="emoji-button ui active icon button w2g-emojis" tabindex="-1">
+                    <i class="smile outline icon"></i>
+                    <div class="emoji-picker-container w2g-dropdown" tabindex="-1">
+                      <div class="emoji-picker">
+                        <div data-w2g="['providers', 'each']" class="w2g-menu">
+                          <div data-w2g="['icon', 'html'], ['$parent.loadProvider', ['event', 'mousedown']], ['active', ['css', ['w2g-active', null]]]"></div>
+                        </div>
+                        <div data-w2g="['activeProvider', 'each']">
+                          <div>
+                            <div data-w2g="['type', ['if', 'grouped']], ['groups', 'each']" class="w2g-menu">
+                              <div data-w2g="['$parent.loadGroup', ['event', 'mousedown']], ['icon', 'html'], ['active', ['css', ['w2g-active', null]]]"></div>
+                            </div>
+                            <div data-w2g="['type', ['if', 'search']]">
+                              <form data-w2g="['$parent.search', ['event', 'submit']]" class="ui form">
+                                <div class="field">
+                                  <div class="ui fluid action input">
+                                    <input data-w2g="['$parent.searchTerm', 'value']" type="text">
+                                    <button class="ui icon submit button">
+                                      <i class="search icon"></i>
+                                    </button>&nbsp;
+                                    <div data-w2g="['$parent.search', ['event', 'click', -1]]" class="ui icon button">
+                                      <i class="chevron circle left icon"></i>
+                                    </div>
+                                    <div data-w2g="['$parent.search', ['event', 'click', 1]]" class="ui icon button">
+                                      <i class="chevron circle right icon"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                            <div data-w2g="['type', ['if', 'file']]">
+                              <form class="ui form">
+                                <div class="field">
+                                  <input data-w2g="['$parent.loadFile', ['event', 'change']]" type="file" accept="image/*" multiple>
+                                </div>
+                                <div class="field"></div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="w2g-emoji-scroll-container">
+                          <div data-w2g="['elementsClass', ['attr', 'class']], ['elements', 'each']">
+                            <span data-w2g="['icon', 'html'], ['name', ['attr', 'title']], ['$parent.insert', ['event', 'click']]" class="pick-emoji-button"></span>
+                          </div>
+                        </div>
+                        <div data-w2g="['activeProvider', 'each']">
+                          <div data-w2g="['attribution', 'html']" class="emoji-attribution"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w2g-spacer" tabindex="-1"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-w2g="['plMouseOver', ['event', 'mouseenter', null, false]], ['plMouseOut', ['event', 'mouseleave', null, false]]" class="w2g-menu-tab w2g-playlists">
+              <div class="playlist-menu mod-pl">
+                <div class="ui fluid input">
+                  <select data-w2g="['selectPlaylist', ['event', 'change']], ['playlists.selectedIndex', ['property', 'selectedIndex']], ['playlists.lists', 'each']" class="ui fluid selection dropdown">
+                    <option data-w2g="['title', 'text'], ['key', ['attr', 'value']]">Title</option>
+                  </select>
+                </div>
+              </div>
+              <div class="w2g-playlists-settings mod-pl">
+                <div class="w2g-menu">
+                  <div data-w2g="['shuffle', ['css', ['w2g-active', null], 0]]">
+                    <i data-w2g="['toggleShuffle', ['event', 'mousedown', 0]]" class="list ol icon"></i>
+                  </div>
+                  <div data-w2g="['shuffle', ['css', ['w2g-active', null], 1]]">
+                    <i data-w2g="['toggleShuffle', ['event', 'mousedown', 1]]" class="random icon" title="Shuffle"></i>
+                  </div>
+                  <div data-w2g="['shuffle', ['css', ['w2g-active', null], 2]]">
+                    <i data-w2g="['toggleShuffle', ['event', 'mousedown', 2]]" class="heart icon"></i>
+                  </div>
+                </div>
+                <i data-w2g="['showPlaylistManager', ['event', 'mousedown']]" class="setting icon" title="Manage playlists"></i>
+                <i data-w2g="['playNext', ['event', 'click']]" class="step forward icon"></i>
+              </div>
+              <div data-w2g="['items', 'each']" class="w2g-list-items w2g-items w2g-scroll-vertical">
+                <div data-w2g="['$parent.dragStart', ['event', 'dragstart', null, false]], ['$parent.dragOver', ['event', 'dragover']], ['$parent.dragEnter', ['event', 'dragenter']], ['$parent.dragDrop', ['event', 'drop']], ['active', ['css', ['w2g-item-active', null]]], ['dragover', ['css', ['dragover', null]]], ['vote_count', ['style', 'order']]" class="w2g-list-item darker-item" draggable="true">
+                  <div class="w2g-list-item-image mod-player" title="Play">
+                    <img data-w2g="['$parent.playClick', ['event', 'click']], ['thumb', ['attr', 'src']]" src="/assets/dummy-aa5e8e83b6490c8cc064d6342a8a2a441a0ca8be6bb08ca1884987bc0eefa5d0.png" alt="Preview image" draggable="false">
+                  </div>
+                  <div data-w2g="['$parent.shuffle', ['if', 2]], ['$parent.toggleVote', ['event', 'click']]" class="w2g-list-item-voting">
+                    <i data-w2g="['voted', ['css', ['red', null]]]" class="heart icon"></i>
+                    <span data-w2g="['vote_count', 'text']" class="w2g-vote-count"></span>
+                  </div>
+                  <div class="w2g-list-item-title mod-player" data-w2g="['$parent.playClick', ['event', 'click']], ['title', 'text']" title="Play"></div>
+                  <div class="w2g-list-item-actions mod-pl">
+                    <i data-w2g="['$parent.deleteFromPlaylist', ['event', 'click']]" class="ui remove icon" title="Delete"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w2g-menu-tab w2g-history w2g-scroll-vertical">
+              <div data-w2g="['items', 'each']" class="w2g-list-items w2g-column-reverse">
+                <div data-w2g="['$parent.playItem', ['event', 'click']]" class="w2g-list-item darker-item mod-player" title="Play">
+                  <div class="w2g-list-item-image">
+                    <img data-w2g="['thumb', ['attr', 'src']]" src="/assets/dummy-aa5e8e83b6490c8cc064d6342a8a2a441a0ca8be6bb08ca1884987bc0eefa5d0.png" alt="Preview image">
+                  </div>
+                  <div class="w2g-list-item-title" data-w2g="['title', 'text']"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w2g-mobile-nav">
+            <div class="invite-cta"><i class="user plus icon"></i></div>
+            <div data-w2g="['searchOpen', 'toggle']"><i data-w2g="['searchOpen', ['css', ['green', null]]]" class="search icon w2g-mobile-search"></i></div>
+            <div data-w2g="['showSettings', ['event', 'click']]"><i class="setting icon"></i></div>
+            <div class="w2g-logout"><i class="sign out icon"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <audio id="w2g-audio-news">
+      <source src="/sounds/bell.mp3" type="audio/mp3">
+    </audio>
+    <div id="fb-root"></div>
+    <script src="/prebid.js"></script>
+    <div style="display: none">
+  <div id="w2g_string_joined_room">
+    User joined room
+  </div>
+  <div id="w2g_string_left_room">
+    User left room
+  </div>
+  <div id="w2g_string_delete_room">
+    Delete room
+  </div>
+  <div id="w2g_string_members_only">
+    Members only
+  </div>
+  <div id="w2g_string_not_remove_pl_item">
+    Item could not be removed from the playlist.
+  </div>
+	<div id="w2g_string_playlist_not_created">
+		Playlist could not be created. Please enter a name with max. 40 characters.
+	</div>
+	<div id="w2g_string_really_delete_pl">
+		Do you really want to delete this playlist?
+	</div>
+  <div id="w2g_string_confirm_delete_account">
+    Do you really want to delete your account? This action cannot be undone.
+  </div>
+	<div id="w2g_string_imported_into_pl">
+		Items were successfully imported into the playlist.
+	</div>
+	<div id="w2g_string_youtube_pl_empty">
+		This playlist does not contain any items.
+	</div>
+	<div id="w2g_string_nickname_length">
+		Your nickname should be min. 4 and max. 20 characters long.
+	</div>
+	<div id="w2g_string_select_pl_before">
+		Please select a playlist before you start adding items.
+	</div>
+	<div id="w2g_string_you_are_banned">
+		The owner has banned you from this room.
+	</div>
+	<div id="w2g_string_not_allowed_join">
+		You are not allowed to join the room.
+	</div>
+	<div id="w2g_string_only_owner_moderation">
+		Moderation for this room can only be enabled by the room owner.
+	</div>
+	<div id="w2g_string_no_fullscreen">
+		Your browser does not support the HTML5 fullscreen mode.
+	</div>
+	<div id="w2g_string_error_reload">
+		Error – you have been disconnected. Refresh the page to reconnect.
+	</div>
+	<div id="w2g_string_invalid_room_name">
+		This name is invalid. Please try again!
+	</div>
+	<div id="w2g_string_moderated_alert">
+		This room is moderated. Only the owner can select items or alter playback.
+	</div>
+	<div id="w2g_string_item_could_not_pl">
+		Item could not be added to the playlist.
+	</div>
+	<div id="w2g_string_no_youtube_pl">
+		This does not look like a link to a playlist.
+	</div>
+	<div id="w2g_string_really_delete_item">
+		Do you really want to remove this item?
+	</div>
+	<div id="w2g_string_really_ban_user">
+		Do you really want to ban the user: 
+	</div>
+	<div id="w2g_string_use_w2g_controls">
+		Please use Watch2Gether&#39;s player controls. Do you want to open this media on its original page?
+	</div>
+	<div id="w2g_string_playing_on">
+		Playing on
+	</div>
+	<div id="w2g_string_iphone_note">
+		The iPhone only has limited support for online video. Watch2Gether will therefore not work correctly on your device. iPads and MacBooks are fully supported.
+	</div>
+	<div id="w2g_string_w2g_window_title">
+		Watch2Gether
+	</div>
+		<div id="w2g_string_temporary_rooms">
+		Temporary rooms will be deleted after 24 hours.
+	</div>
+		<div id="w2g_string_create_persistent_rooms">
+		Sign up for a Watch2Gether account to create permanent rooms!
+	</div>
+	<div id="w2g_string_plus_only_with_plus">
+		This is a Watch2Gether +PLUS feature. Would you like to learn more and try +PLUS for free?
+	</div>
+  <div id="w2g_string_no_playlist_selected">
+    No playlist selected.
+  </div>
+  <div id="w2g_string_invite_friends">
+    Invite friends
+  </div>
+  <div id="w2g_string_allow_push_popup">
+    Click on the padlock icon and allow the browser to send you notifications.
+  </div>
+  <div id="w2g_string_plus_thank_you">
+    Thank you! It might take a few minutes until Watch2Gether +PLUS is activated.
+  </div>
+  <div id="w2g_string_plus_purchase_canceled">
+    Your purchase has been canceled, you can try again at any time!
+  </div>
+  <div id="w2g_string_room_gone">
+    This Watch2gether room does not exist.
+  </div>
+  <div id="w2g_string_try_w2g_plus">
+    You don&#39;t like advertising? Try Watch2Gether PLUS!
+  </div>
+</div>
+    <script src="/assets/client_new-463147a7b07d9675f0c4f2406b7ad5fd1691d5fdca5c568257b3ba3bc628b4e7.js"></script>
+  </body>
+</html>
